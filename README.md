@@ -116,7 +116,7 @@
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="project">
-                <img src="project1.jpg" alt="Project 1">
+                <img src="64E17859-64F0-43CF-BD10-7D3CD64C87D2_1_105_c.jpeg" alt="Project 1">
                 <h3>Project Title 1</h3>
                 <p>Brief description of the project.</p>
             </div>
