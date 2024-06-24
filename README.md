@@ -1,132 +1,170 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgar's New York City Adventures</title>
+    <title>Edgar's Creative Portfolio</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            background-color: #f4f4f4;
         }
         header {
-            background: #000;
+            background-color: #333;
             color: #fff;
-            padding: 20px 0;
-            border-bottom: 5px solid #ffcc00;
+            padding: 20px;
+            text-align: center;
         }
         header h1 {
-            text-align: center;
-            font-family: 'Copperplate', 'Papyrus', fantasy;
-            font-size: 2.5em;
             margin: 0;
+            font-size: 2.5em;
+            font-family: 'Copperplate', 'Papyrus', fantasy;
         }
         nav {
-            text-align: center;
-            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
         }
         nav a {
-            color: #ffcc00;
+            color: #fff;
+            padding: 15px 20px;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
+            text-transform: uppercase;
+            font-weight: bold;
         }
         nav a:hover {
-            text-decoration: underline;
+            background-color: #555;
         }
-        .banner {
-            background: #ffcc00;
-            color: #000;
-            padding: 30px 0;
-            text-align: center;
-        }
-        .banner h2 {
-            font-size: 2em;
-            font-family: 'Copperplate', 'Papyrus', fantasy;
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
         }
         section {
-            padding: 20px 0;
-            border-bottom: 1px solid #ddd;
+            padding: 50px 0;
         }
-        section:last-child {
-            border: none;
-        }
-        h2 {
+        section h2 {
             font-family: 'Copperplate', 'Papyrus', fantasy;
+            font-size: 2em;
             text-align: center;
-            color: #000;
+            margin-bottom: 20px;
         }
-        p {
-            font-size: 1.1em;
+        .about, .contact {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about p, .contact p {
+            font-size: 1.2em;
             line-height: 1.6;
-            margin: 15px 0;
+        }
+        .projects, .gallery, .blog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .projects .project, .gallery .image, .blog .post {
+            flex: 1 1 calc(33.333% - 40px);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects .project img, .gallery .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .blog .post h3 {
+            margin-top: 0;
         }
         footer {
-            background: #000;
-            color: #ffcc00;
+            background-color: #333;
+            color: #fff;
             text-align: center;
-            padding: 20px 0;
+            padding: 20px;
             margin-top: 20px;
-            border-top: 5px solid #ffcc00;
+        }
+        @media (max-width: 768px) {
+            .projects .project, .gallery .image, .blog .post {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .projects .project, .gallery .image, .blog .post {
+                flex: 1 1 100%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Edgar's New York City Adventures</h1>
-        </div>
+        <h1>Edgar's Creative Portfolio</h1>
     </header>
-
     <nav>
-        <div class="container">
-            <a href="#about">About</a>
-            <a href="#adventures">Adventures</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
     </nav>
-
-    <section class="banner">
-        <div class="container">
-            <h2>Explore the Journey</h2>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
+    <div class="container">
+        <section id="about" class="about">
             <h2>About Me</h2>
-            <p>Welcome to my adventures in New York City! I'm Edgar Haro, a 31-year-old Californian now living in the heart of the Big Apple. Life has been an incredible journey, and I'm here to share my experiences and stories with you.</p>
-        </div>
-    </section>
-
-    <section id="adventures">
-        <div class="container">
-            <h2>My Adventures</h2>
-            <p>[Insert your first adventure here]</p>
-            <p>[Insert your second adventure here]</p>
-            <p>[Insert your third adventure here]</p>
-            <!-- Add more paragraphs as needed -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
+            <p>Hi, I'm Edgar Haro, a 31-year-old Californian living in New York City. After a tumultuous childhood and upbringing, I am proof that it gets better. I am living an incredible life, filled with hope and endless possibilities. Welcome to my creative portfolio where I showcase my projects, memories, and experiences.</p>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Brief description of the project.</p>
+            </div>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="image">
+                <img src="memory1.jpg" alt="Memory 1">
+            </div>
+            <div class="image">
+                <img src="memory2.jpg" alt="Memory 2">
+            </div>
+            <div class="image">
+                <img src="memory3.jpg" alt="Memory 3">
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <h2>Blog</h2>
+            <div class="post">
+                <h3>Blog Post Title 1</h3>
+                <p>Summary or excerpt of the blog post.</p>
+            </div>
+            <div class="post">
+                <h3>Blog Post Title 2</h3>
+                <p>Summary or excerpt of the blog post.</p>
+            </div>
+            <div class="post">
+                <h3>Blog Post Title 3</h3>
+                <p>Summary or excerpt of the blog post.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
             <h2>Contact Me</h2>
             <p>If you'd like to get in touch, feel free to email me at: <a href="mailto:edgar@example.com">edgar@example.com</a></p>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <footer>
         <p>&copy; 2024 Edgar Haro. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
-
