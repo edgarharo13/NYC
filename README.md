@@ -3,135 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edgar Haro - Begin to Hope</title>
+    <title>Edgar's Introduction</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77d7d7 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        .banner {
-            background: #77d7d7;
-            color: #fff;
-            padding: 10px 0;
+        .intro-text {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
             text-align: center;
-        }
-        section {
-            padding: 20px 0;
-            border-bottom: #e6e6e6 1px solid;
-        }
-        section:last-child {
-            border: none;
-        }
-        .content {
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Edgar Haro</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="banner">
-        <div class="container">
-            <h2>Begin to Hope</h2>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container content">
-            <h2>About Me</h2>
-            <p>Hi, I'm Edgar Haro, a 31-year-old Californian living in New York City. After a tumultuous childhood and upbringing, I am proof that it gets better. I am living an incredible life, filled with hope and endless possibilities.</p>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container content">
-            <h2>Projects</h2>
-            <p>Here are some of my projects, including picture collections of my favorite memories and videos.</p>
-            <div>
-                <h3>Picture Collection</h3>
-                <!-- Placeholder for picture collection -->
-                <p>[Insert your favorite memories here]</p>
-            </div>
-            <div>
-                <h3>Videos</h3>
-                <!-- Placeholder for videos -->
-<img src="https://example.com/new-york-city.jpg" alt="New York City Image">
-
-                <p>[Insert your videos here]</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container content">
-            <h2>Contact</h2>
-            <p>You can reach me at: <a href="mailto:edgar@example.com">edgar@example.com</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Edgar Haro. All Rights Reserved.</p>
-    </footer>
+    <div class="intro-text">
+        My name is Edgar, happy to be here
+    </div>
 </body>
 </html>
-
