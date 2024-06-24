@@ -1,6 +1,3 @@
-# NYC
-Life in New York City
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
